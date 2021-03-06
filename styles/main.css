@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--preta);
+  font-family: Roboto;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin: 1rem 2rem;
+}
+
+.logo img{
+  width: 10rem;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #fff;
+}
+
+
+/* filme principal*/
+
+.container{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.filme-principal{
+  font-size: 20px;
+  background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('/public/main-film.jpg');
+  height: 90vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.filme-principal .descricao{
+  margin-top: 2%;
+  margin-bottom: 40px;
+}
+
+.titulo{
+  margin-top: 15%;
+  font-size: 90px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 20px 40px;
+  margin-right: 20px;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: .4s ease all;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+.botao i{
+  margin-right: 10px;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
